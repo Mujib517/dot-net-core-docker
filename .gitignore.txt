@@ -1,0 +1,4 @@
+dot-net-core-docker/bin
+dot-net-core-docker/obj
+.vs/
+node_modules
