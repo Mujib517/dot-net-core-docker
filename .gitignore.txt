@@ -1,4 +1,5 @@
-dot-net-core-docker/bin
-dot-net-core-docker/obj
-.vs/
+dot-net-core-docker/bin/**/*.*
+dot-net-core-docker/obj/**/*.*
+.vs/*.*
+.vs/config/*.*
 node_modules
