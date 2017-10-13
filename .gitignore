@@ -1,0 +1,6 @@
+*.suo
+*.user
+_ReSharper.*
+dot-net-core-docker/bin/**/*
+dot-net-core-docker/obj/**/*
+packages
