@@ -13,12 +13,18 @@ namespace dot_net_core_docker.Controllers
     {
         // GET api/values
         [HttpGet]
-        public IEnumerable<string> Get()
+        public IActionResult Get()
         {
-
-            SqlConnection con = new SqlConnection("Data Source=WINMR185242-2AK;Initial Catalog=Person;Integrated Security=True");
-            con.Open();
-            return new string[] { "value1", "value2" };
+            try
+            {
+                SqlConnection con = new SqlConnection("Data Source=WINMR185242-2AK;Initial Catalog=Person;Integrated Security=True");
+                con.Open();
+                return Ok(new[] { "value 1", "value 2" });
+            }
+            catch (Exception ex)
+            {
+                return Ok(ex.Message);
+            }
         }
     }
 }
